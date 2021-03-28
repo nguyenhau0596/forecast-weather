@@ -50,3 +50,8 @@ code {
     transform: rotate(360deg);
   }
 }
+
+.location-select {
+  width: 40%;
+  min-width: 200px;
+}

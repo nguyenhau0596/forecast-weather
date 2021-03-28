@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 
+import Header from 'components/Header';
 import { ROUTES } from 'routes';
 import reducer from 'redux/reducers';
 import saga from 'redux/saga';
@@ -17,6 +18,7 @@ sagaMiddleware.run(saga);
 function App() {
   return (
     <Provider store={store}>
+      <Header />
       <HashRouter>
         <Switch>
           {ROUTES.map((route, idx) => <Route

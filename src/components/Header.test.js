@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Header from './Header';
 
-test('renders header text', () => {
-  render(<App />);
+test('renders website name', () => {
+  render(<Header />);
   const linkElement = screen.getByText(/mini forecast weather/i);
   expect(linkElement).toBeInTheDocument();
 });
